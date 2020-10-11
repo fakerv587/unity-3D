@@ -19,6 +19,8 @@ public class FirstController : MonoBehaviour, SceneController{
     private UserGUI mygui;
     
     public Action actionManager;
+
+    public Judge judgeManager;
     FirstController()
     {
         Priests = new Role[3];
@@ -29,7 +31,8 @@ public class FirstController : MonoBehaviour, SceneController{
     void Start() {
         Director director = Director.GetInstance();      
         director.scene = this;
-        actionManager = new Action();                          
+        actionManager = new Action();    
+        judgeManager = new Judge();                      
         this.LoadResources();
     }
 
@@ -262,16 +265,11 @@ public class FirstController : MonoBehaviour, SceneController{
         {
             actionManager.MoveBoat(boat, Priests, Devils);
         }
-
-
-        if ((fromPriestNum != 0 && fromDevilNum > fromPriestNum) || (toPriestNum != 0 && toDevilNum > toPriestNum))
-        {
+        if(judgeManager.check(fromPriestNum, fromDevilNum, toPriestNum, toDevilNum, boat.num) == -1){
             state = 0;
             mygui.setLose();
         }
-
-        if (toDevilNum+toPriestNum == 6 && boat.num == 0)
-        {
+        else if(judgeManager.check(fromPriestNum, fromDevilNum, toPriestNum, toDevilNum, boat.num) == 1){
             state = 1;
             mygui.setWin();
         }

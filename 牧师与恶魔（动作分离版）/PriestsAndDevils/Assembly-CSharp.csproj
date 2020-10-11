@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Role.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\Boat.cs" />
+     <Compile Include="Assets\Scripts\Judge.cs" />
      <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
      <None Include="Assets\AgedRiverBoat\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
