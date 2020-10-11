@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class FirstController : MonoBehaviour, SceneController{
 
-    private Role[] Priests;              // 牧师
-    private Role[] Devils;               // 恶魔
-    private GameObject GroundFrom;       // 陆地
-    private GameObject GroundTo;         // 陆地
-    private GameObject Water;            // 水
-    private Boat boat;             // 船
+    private Role[] Priests;            
+    private Role[] Devils;              
+    private GameObject GroundFrom;     
+    private GameObject GroundTo;      
+    private GameObject Water;     
+    private Boat boat;         
     private int fromDevilNum;
     private int fromPriestNum;
     private int toDevilNum;
     private int toPriestNum;
-    private int state;      // -1代表正在进行，0代表输，1代表赢
+    private int state;    
 
     private UserGUI mygui;
-
+    
+    public Action actionManager;
     FirstController()
     {
         Priests = new Role[3];
@@ -26,8 +27,9 @@ public class FirstController : MonoBehaviour, SceneController{
 
     // Use this for initialization
     void Start() {
-        Director director = Director.GetInstance();      //得到导演实例
-        director.scene = this;                          //设置当前场景控制器
+        Director director = Director.GetInstance();      
+        director.scene = this;
+        actionManager = new Action();                          
         this.LoadResources();
     }
 
@@ -37,15 +39,11 @@ public class FirstController : MonoBehaviour, SceneController{
 
         state = -1;
 
-        // 创建新的GUI
         mygui = new UserGUI();
 
-        // 加载数量
         fromDevilNum = fromPriestNum = 3;
         toDevilNum = toPriestNum = 0;
 
-
-        // 加载地面
         GroundFrom = Object.Instantiate(Resources.Load("ground3", typeof(GameObject)), new Vector3(0, -5, 15), Quaternion.identity, null) as GameObject;
         GroundFrom.transform.localScale = new Vector3(20, 9, 15);
         GroundFrom.name = "groundfrom";
@@ -53,14 +51,11 @@ public class FirstController : MonoBehaviour, SceneController{
         GroundTo.transform.localScale = new Vector3(20, 9, 15);
         GroundTo.name = "groundto";
 
-        // 加载水
         Water = Object.Instantiate(Resources.Load("Water", typeof(GameObject)), new Vector3(0, -6, 0), Quaternion.identity, null) as GameObject;
         Water.name = "water";
 
-        // 加载船
         boat = new Boat();
 
-        // 加载牧师对象
         for (int i = 0;i < 3;i ++)
         {
             Role temp = new Role("Sphere");
@@ -73,7 +68,6 @@ public class FirstController : MonoBehaviour, SceneController{
             Priests[i].character.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
-        // 加载恶魔对象
         for (int i = 0; i < 3; i++)
         {
             Role temp = new Role("Cube");
@@ -149,14 +143,12 @@ public class FirstController : MonoBehaviour, SceneController{
 
     public void moveto(string name)
     {
-        // 船不是静止状态下不能操作
         if(boat.movestate != 0)
         {
             return;
         }
         if(name == "boat")
         {
-            // 船从from到to
             if(boat.position == 0 && boat.num > 0)
             {
                 boat.position = 1;
@@ -176,7 +168,6 @@ public class FirstController : MonoBehaviour, SceneController{
                 }
                 
             }
-            // 船从to到from
             else if(boat.num > 0)
             {
                 boat.position = 0;
@@ -196,22 +187,22 @@ public class FirstController : MonoBehaviour, SceneController{
                 }
             }
         }
-        // 上下船
         else
         {
             Role obj = findRoleByName(name);
-            // 上船
             if(obj.position == 0 && obj.position == boat.position && boat.num < 2)
             {
                 boat.num++;
                 if(boat.BoatState[0] == 0)
                 {
                     obj.getBoat(1);
+                    actionManager.GetBoat(obj, 1);
                     boat.BoatState[0] = MapName(name);
                 }
                 else
                 {
                     obj.getBoat(2);
+                    actionManager.GetBoat(obj, 2);
                     boat.BoatState[1] = MapName(name);
                 }
             }
@@ -221,15 +212,16 @@ public class FirstController : MonoBehaviour, SceneController{
                 if (boat.BoatState[0] == 0)
                 {
                     obj.getBoat(4);
+                    actionManager.GetBoat(obj, 4);
                     boat.BoatState[0] = MapName(name);
                 }
                 else
                 {
                     obj.getBoat(3);
+                    actionManager.GetBoat(obj, 3);
                     boat.BoatState[1] = MapName(name);
                 }
             }
-            // 下船
             else if(obj.position == 2)
             {
                 if(boat.position == 0)
@@ -237,12 +229,14 @@ public class FirstController : MonoBehaviour, SceneController{
                     boat.num--;
                     boat.BoatState[obj.boatPos] = 0;
                     obj.MoveToOrigin();
+                    actionManager.MoveToOrigin(obj);
                 }
                 else
                 {
                     boat.num--;
                     boat.BoatState[obj.boatPos] = 0;
                     obj.MoveToDest();
+                    actionManager.MoveToDest(obj);
                 }
             }
         }
@@ -266,32 +260,7 @@ public class FirstController : MonoBehaviour, SceneController{
     void Update () {
         if(boat.movestate > 0)
         {
-            // 船移动
-            Vector3 Current = boat.thisboat.transform.position;
-            Vector3[] Target = { new Vector3(0, -3, -5), new Vector3(0, -3, 4) };
-            Vector3 tar = Target[boat.movestate - 1];
-            int a = boat.movestate - 1;
-            if (Current == tar)
-            {
-                boat.movestate = 0;
-            }
-            boat.thisboat.transform.position = Vector3.MoveTowards(Current, tar, 8f * Time.deltaTime);
-            Vector3[,] targets = { 
-                { new Vector3(0, -3, -5), new Vector3(0, -3, -6) },
-                { new Vector3(0, -3, 5), new Vector3(0, -3, 6) }
-            };
-
-            for (int i = 0;i < 2;i ++)
-            {
-                int b = i;
-                Role r = MapNumToRole(boat.BoatState[i]);
-                if (r != null)
-                {
-                    Vector3 cur = r.character.transform.position;
-                    r.character.transform.position = Vector3.MoveTowards(cur, targets[a,b], 8f * Time.deltaTime);
-                }
-            }
-            
+            actionManager.MoveBoat(boat, Priests, Devils);
         }
 
 

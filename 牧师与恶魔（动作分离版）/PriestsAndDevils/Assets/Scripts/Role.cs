@@ -5,8 +5,8 @@ using UnityEngine;
 public class Role {
     public GameObject character;
     public Move moveto;
-    public int position;    // 0:from 1:to 2:boat
-    public int boatPos;     // 0 1
+    public int position;    
+    public int boatPos;    
     public Vector3 origin;
     public Vector3 dest;
     public Role(string name)
@@ -27,22 +27,18 @@ public class Role {
         if (i == 1)
         {
             boatPos = 0;
-            character.transform.position = new Vector3(0, -3, 4);
         }
         else if(i == 2)
         {
             boatPos = 1;
-            character.transform.position = new Vector3(0, -3, 6);
         }
         else if(i == 3)
         {
             boatPos = 1;
-            character.transform.position = new Vector3(0, -3, -4);
         }
         else
         {
             boatPos = 0;
-            character.transform.position = new Vector3(0, -3, -6);
         }
     }
 
@@ -60,13 +56,11 @@ public class Role {
     public void MoveToOrigin()
     {
         position = 0;
-        character.transform.position = origin;
     }
 
     public void MoveToDest()
     {
         position = 1;
-        character.transform.position = dest;
     }
 
 }

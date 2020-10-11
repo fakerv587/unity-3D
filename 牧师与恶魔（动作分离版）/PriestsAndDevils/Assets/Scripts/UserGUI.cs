@@ -34,7 +34,6 @@ public class UserGUI : MonoBehaviour, IUserAction {
             fontSize = 50,
             fontStyle = FontStyle.BoldAndItalic,
         };
-        // normal:Rendering settings for when the component is displayed normally.
         style.normal.textColor = new Color(0 / 255f, 0 / 255f, 0 / 255f);    // 需要除以255，因为范围是0-1
         GUI.Label(new Rect(UnityEngine.Screen.width/2, UnityEngine.Screen.height/8, 200, 150), "Priests and Devils", style);
         if (GUI.Button(new Rect(UnityEngine.Screen.width / 10, UnityEngine.Screen.height / 10, 100, 50), "Reset"))

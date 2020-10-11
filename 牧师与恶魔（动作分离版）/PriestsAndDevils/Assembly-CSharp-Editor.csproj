@@ -57,64 +57,64 @@
   <ItemGroup>
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.4f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -306,19 +306,19 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.4f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/nz/Downloads/3DGame-master/3DGame-master/PriestsAndDevils/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>E:/Unity-3D/牧师与恶魔（动作分离版）/PriestsAndDevils/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.4f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

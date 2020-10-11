@@ -4,9 +4,9 @@ using UnityEngine;
 
 public interface SceneController
 {
-    void LoadResources();                                  //加载场景
-    void print();   // 打印 测试用
-    int getPosition(string name); // 获取位置
+    void LoadResources();                                 
+    void print();  
+    int getPosition(string name); 
     void moveto(string name);
     void Reset();
 }
