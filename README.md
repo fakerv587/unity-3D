@@ -9,5 +9,6 @@
 
 4.[牧师与恶魔分离版](https://github.com/fakerv587/unity-3D/tree/main/%E7%89%A7%E5%B8%88%E4%B8%8E%E6%81%B6%E9%AD%94%EF%BC%88%E5%8A%A8%E4%BD%9C%E5%88%86%E7%A6%BB%E7%89%88%EF%BC%89)
 
+5.[Hit UFO](https://github.com/fakerv587/unity-3D/tree/main/Hit%20UFO)
 
 如果项目内容有疑问，请联系nanzh@mail2.sysu.edu.cn或者670686205@qq.com
