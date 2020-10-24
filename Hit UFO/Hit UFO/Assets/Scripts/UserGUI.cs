@@ -16,12 +16,10 @@ public class UserGUI : MonoBehaviour
 
     void OnGUI()
     {
-        //小字体初始化
         GUIStyle style = new GUIStyle();
         style.normal.textColor = Color.white;
         style.fontSize = 30;
 
-        //大字体初始化
         GUIStyle bigStyle = new GUIStyle();
         bigStyle.normal.textColor = Color.white;
         bigStyle.fontSize = 50;
@@ -33,11 +31,11 @@ public class UserGUI : MonoBehaviour
         {
             userAction.Restart();
         }
-        if (GUI.Button(new Rect(20, 100, 100, 40), "正常模式(默认)"))
+        if (GUI.Button(new Rect(20, 100, 100, 40), "正常模式"))
         {
             userAction.SetMode(false);
         }
-        if (GUI.Button(new Rect(20, 150, 100, 40), "无尽模式"))
+        if (GUI.Button(new Rect(20, 150, 100, 40), "无尽模式！！！"))
         {
             userAction.SetMode(true);
         }

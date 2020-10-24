@@ -9,11 +9,10 @@ public class CCFlyAction : SSAction
     Vector3 direction;      //飞行方向
     float time;             //时间
 
-    //生产函数(工厂模式)
     public static CCFlyAction GetSSAction(Vector3 direction, float speed)
     {
         CCFlyAction action = ScriptableObject.CreateInstance<CCFlyAction>();
-        action.gravity = 4.9f; // 减少一半 防止下落太快了
+        action.gravity = 4.5f; 
         action.time = 0;
         action.speed = speed;
         action.direction = direction;
@@ -30,7 +29,6 @@ public class CCFlyAction : SSAction
         time += Time.deltaTime;
         transform.Translate(Vector3.down * gravity * time * Time.deltaTime);
         transform.Translate(direction * speed * Time.deltaTime);
-        //如果飞碟到达底部，则动作结束，进行回调
         if (this.transform.position.y < -6)
         {
             this.destroy = true;
