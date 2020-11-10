@@ -36,26 +36,26 @@ public class UserGUI : MonoBehaviour
         bigStyle.fontSize = 50;
 
         GUI.Label(new Rect(300, 30, 50, 200), "Hit UFO Game", bigStyle);
-        GUI.Label(new Rect(20, 0, 100, 50), "得分: " + points, style);
+        GUI.Label(new Rect(20, 0, 100, 50), "Score: " + points, style);
         GUI.Label(new Rect(310, 100, 50, 200), gameMessage, style);
 
-        if (GUI.Button(new Rect(20, 50, 100, 40), "重新游戏"))
+        if (GUI.Button(new Rect(20, 210, 100, 40), "Restart"))
         {
             userAction.Restart();
         }
-        if (GUI.Button(new Rect(20, 100, 100, 40), "正常模式(默认)"))
+        if (GUI.Button(new Rect(200, 260, 100, 40), "Normal mode"))
         {
             userAction.SetMode(false);
         }
-        if (GUI.Button(new Rect(20, 150, 100, 40), "无尽模式"))
+        if (GUI.Button(new Rect(200, 310, 100, 40), "Nightmare"))
         {
             userAction.SetMode(true);
         }
-        if (GUI.Button(new Rect(20, 200, 100, 40), "运动学"))
+        if (GUI.Button(new Rect(200, 360, 100, 40), "Kinematics"))
         {
             userAction.SetFlyMode(false);
         }
-        if (GUI.Button(new Rect(20, 250, 100, 40), "物理学"))
+        if (GUI.Button(new Rect(200, 410, 100, 40), "Physics"))
         {
             userAction.SetFlyMode(true);
         }
